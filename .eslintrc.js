@@ -41,5 +41,18 @@ module.exports = {
     "react/destructuring-assignment": "off",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
+    "import/no-cycle": "off",
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+  },
+  settings: {
+    "import/resolver": {
+      typescript: {
+        project: ".",
+      },
+      node: {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+      },
+    },
   },
 };
