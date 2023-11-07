@@ -9,7 +9,6 @@ module.exports = {
     "airbnb",
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended",
-    "plugin:import/typescript",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -35,15 +34,5 @@ module.exports = {
     "react/destructuring-assignment": "off",
     "@stylistic/indent": ["error", 2],
     "@stylistic/quotes": ["error", "double"],
-  },
-  settings: {
-    "import/resolver": {
-      typescript: {
-        project: ".",
-      },
-      node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-      },
-    },
   },
 };

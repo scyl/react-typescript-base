@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import React from "react";
-import TodoList from "./todoList";
+import TodoList from "./app";
 
 describe("todoList", () => {
   it("render the title", () => {
