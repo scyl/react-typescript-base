@@ -7,9 +7,9 @@ module.exports = {
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-  setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
+  setupFilesAfterEnv: ["./jestSetup.ts"],
   moduleNameMapper: {
     "\\.(scss|css)$": "<rootDir>/__mocks__/style-mock.js",
   },
-};
+  testEnvironment: "jsdom",
 };

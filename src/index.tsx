@@ -1,5 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import TodoList from "./todoList";
 
-ReactDOM.render(<TodoList />, document.getElementById("todoList"));
+const container = document.getElementById("app");
+const root = createRoot(container!);
+root.render(<TodoList />);
